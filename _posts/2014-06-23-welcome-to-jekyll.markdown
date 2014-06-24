@@ -20,17 +20,16 @@ rescue
 end
 {% endhighlight %}
 
-Shortcut for using in a method: if we are inside a method and we want to rescue some exception we do not need to use begin.
+If we are inside a method and we want to rescue some exception we do not need to use begin.
 
-{% highlight ruby}
+{% highlight ruby %}
 def method_name
   call_to_api
-  rescue
-   puts 'This line will be called if call to api throws an error'
-
+rescue
+  puts 'This line will be called if call to api throws an error'
 end
 
-<% endhilight %}
+{% endhighlight %}
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
