@@ -1,22 +1,36 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Race, Rescue, God"
 date:   2014-06-23 14:01:36
 categories: jekyll update
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+- Race Condition
+- Rescue
+- God Object
 
-Jekyll also offers powerful support for code snippets:
+Rescueing Exception
 
+Basic outline: 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
+begin
+
+rescue
+
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+Shortcut for using in a method: if we are inside a method and we want to rescue some exception we do not need to use begin.
+
+{% highlight ruby}
+def method_name
+  call_to_api
+  rescue
+   puts 'This line will be called if call to api throws an error'
+
+end
+
+<% endhilight %}
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
